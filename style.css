@@ -1,0 +1,504 @@
+/* ---------------- Google Font ----------------  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400&family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&family=Open+Sans:wght@300;400&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400&family=Rozha+One&display=swap');
+
+
+*{
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+
+    scroll-padding-top: 2rem;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+section{
+    padding: 50px 5%;
+}
+
+img{
+    width: 100%;
+}
+
+/* ---------------- Navbar ----------------  */
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 30px 5%;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo svg{
+    width: 80px;
+    height: 80px;
+}
+
+.logo span{
+    margin-left: 15px;
+    font-family: 'Rozha One', serif;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    font-size: 14px;
+    padding: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.navbar a:hover{
+    color: rgb(67, 66, 66);
+}
+
+#menu-icon{
+    cursor: pointer;
+    font-size: 24px;
+    display: none;
+    z-index: 1001;
+}
+
+
+/* ---------------- Home ----------------  */
+.home{
+    height: 85vh;
+    width: 100%;
+    background: url(./img/home.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home h1{
+    font-size: 65px;
+    color: #fff;
+    font-family: 'Rozha One', serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.home-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home p{
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn{
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 70px;
+    border: 1px solid #fff;
+    padding: 10px;
+    width: 100px;
+    transition: 0.8s;
+}
+
+.btn:hover{
+    background: #fff;
+    color: black;
+}
+
+
+/* ---------------- About ----------------  */
+.about, .testimonials{
+    background: #efe9e6;
+    padding: 70px 5%;
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text h1, .testimonials h1{
+    font-size: 2.3rem;
+    color: black;
+    font-family: 'Rozha One', serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-text p{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    /* margin-top: 10px; */
+}
+
+.about-text .btn{
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    margin-top: 50px;
+}
+
+.about-text .btn:hover{
+    color: #fff;
+    background: black;
+}
+
+
+/* ---------------- Special ----------------  */
+.special{
+    padding: 100px 5%;
+}
+
+.special .heading h1{
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.special-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    /* gap: 5rem; */
+    justify-content: center;
+}
+
+.special-container .box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 100px;
+}
+
+.special-container .box .box-image svg{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.special-container .box h2, .testimonials .box h2{
+    font-family: 'Rozha One', serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.special-container .box p, .testimonials .box p{
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+/* ---------------- Gallery ----------------  */
+.gallery{
+    padding: 50px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image1{
+    height: 80vh;
+    width: 100%;
+    background: url(./img/gallery1.webp);
+    background-position:center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image1 h1{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.image1 p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.image1 i{
+    font-size: 1.2rem;
+}
+
+
+.gallery .btn{
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+/* ---------------- Testimonials ----------------  */
+.testimonials-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.testimonials-text .box{
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* gap: 1rem; */
+    margin: 0 75px;
+}
+
+
+/* ---------------- Quote ----------------  */
+.quote{
+    height: 60vh;
+    background: url(./img/quote.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quote-text h1{
+    font-size: 2.3rem;
+    color: #fff;
+    font-family: 'Rozha One', serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.quote-text p{
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 20px;
+}   
+
+
+/* ---------------- Booking ----------------  */
+.booking{
+    display: flex;
+    flex-direction: column;
+    /* background: red; */
+    align-items: center;
+}
+
+.booking-test h1{
+    font-size: 2.3rem;
+    font-family: 'Rozha One', serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.booking-test p{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+    text-align: center;
+}  
+
+.booking-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.booking-form form{
+    /* max-width: 50%; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.booking-form form input{
+    padding: 15px 10px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid black;
+}
+
+.booking-form form textarea{
+    padding: 15px 10px;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid black;
+    resize: none;
+}
+
+button{
+    font-size: 14px;
+    color: white;
+    background: black;
+    border: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-top: -24px;
+    padding: 15px 15px;
+    width: 100px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+
+footer{
+    padding: 20px 5%;
+    background: #efe9e6;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+
+
+
+/* ---------------- Media Query ----------------  */
+
+@media (max-width: 920px){
+
+    section{
+        padding: 30px 4%;
+    }
+
+    header{
+        padding: 11px 4%;
+    }
+
+    #menu-icon{
+        display: initial;
+    }
+
+    header{
+        /* position: absolute; */
+    }
+
+    header .navbar{
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 41px rgb(14, 55, 54 / 14%);
+        border-top: 2px solid var(--main-color);
+        transition: 0.2s;
+        text-align: left;
+        z-index: 1001;
+    }
+
+    .navbar.active{
+        top: 100%;
+    }
+
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+    }
+
+    .home-text h1{
+        font-size: 2.4rem;
+    }
+
+    .special-container .box .box-image svg{
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .testimonials-text .box{
+        width: 40%;
+        margin-bottom: 30px;
+    }
+
+    .testimonials-text h2{  
+        font-size: 12px;        
+    }
+
+    .special .heading h1, .testimonials h1, .about-text h1, .booking-test h1{
+        font-size: 2rem;
+
+    }
+}
+
+
+@media (max-width: 500px){
+    .logo svg{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .logo span{
+        font-size: 16px;
+    }
+
+    .booking-form{
+        width: 80%;
+    }
+
+    .testimonials-text .box h2{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .special-container .box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image1 h1{
+        font-size: 1.8rem;
+    }
+}
